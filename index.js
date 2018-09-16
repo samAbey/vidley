@@ -5,6 +5,8 @@ const customer  = require('./routes/customer');
 const movie     = require('./routes/movie');
 const rentals   = require('./routes/rentals');
 const mongoose  = require('mongoose');
+const Joi       = require('joi');
+Joi.objectid    = require('joi-objectid')(Joi);
 
 const app       = express();
 
